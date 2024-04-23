@@ -1,0 +1,184 @@
+/* Resetando estilos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --font-h1-pink: #B52184;
+  --font-h2-pink: #B52184;
+  --font-p-blue: #312D64;
+  --font-bg-blue: #312D64;
+  --font-bg-white: #FFFFFF;
+  --color-bg-header: #F9F4FB;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Mulish', sans-serif;
+}
+
+body {
+  width: 43rem;
+  margin-inline: auto;/* USADO PARA CENTRALIZAR O CONTEÚDO NO CENTRO DA PÁGINA*/
+  box-sizing: border-box;/*Propriedade que ajuda o box-sizing: border-box a englobar co valor dos paddings a somatória e mostrar todo o conteúdo do box*/
+  height: 100vh;
+  font-size: 1.6rem;
+}
+
+/* Estilos para o cabeçalho */
+
+.container-header {
+  background-color: var(--color-bg-header);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.container-header h1 {
+  color: var(--font-h1-pink);
+  font-size: 3.2rem; 
+  margin-top: 1.7rem;
+  margin-bottom: 5px;
+}
+
+.container-header p {
+  color: var(--font-p-blue);  
+  margin-bottom: 3.5rem; 
+  display: flex;
+  justify-content: center;
+}
+
+.container-header .header-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: auto
+}
+
+figure.figure img.retangle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-bottom: 9.3rem;
+  width: 5.8rem;
+  height: 10.5rem;
+}
+
+figure.figure img.seta {
+  position: absolute;
+  margin-top: -17.5rem;
+  margin-left: 1.0rem;
+ 
+}
+
+/* Estilos para o conteúdo principal */
+
+.container-main {
+  background-color: #312D64;
+  display: flex;
+  flex-direction: column;
+  gap: 5.0rem;
+  padding: 3.9rem;
+}
+
+.container-main div.card {
+  background-color: white;
+  padding: 2.6rem 5.9rem 2.6rem 2.6rem;
+  border-radius: 10px;
+  
+}
+
+.container-main img {
+  width: 8.0rem;
+  height: 8.0rem;
+  margin-bottom: 3.3rem;
+} 
+
+.container-main h2 {
+  color: var(--font-h2-pink);
+  font-size: 3.2rem;
+  margin-bottom: 1.9rem;
+}
+
+.container-main p {
+  color: var(--font-p-blue);
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+/* Estilos para o formulário */
+
+div.container-form {
+  background-color: var(--color-bg-header); 
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 4.0rem;
+}
+
+.container-form h2 {
+  color: var(--font-h2-pink);
+  font-size: 3.2rem;
+  margin-top: 2.8rem;
+  margin-bottom: 4.3rem;
+}
+
+input { 
+  font-size: 1.6rem;
+  background-color: var(--color-bg-header);
+  width: 34.8rem;
+  height: 4.8rem;
+  border-radius: 1.6rem;
+  padding: 1.2rem;
+  margin-bottom: 2.4rem;
+}
+
+::placeholder{
+  color: #312D64;
+}
+
+textarea {
+  color: #312D64;
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--color-bg-header);
+  width: 34.8rem;
+  height: 12.6rem;
+  border-radius: 16px;
+  padding: 12px;
+  margin-bottom: 2.4rem;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="button"] {
+  background-color: var(--font-bg-blue);
+  color: var(--font-bg-white);
+  font-size: 1.4rem;
+  width: 15.0rem;
+  height: 4.5rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para o rodapé */
+
+.container-footer {
+  background-color: var(--font-bg-blue);
+  color: var(--font-bg-white);
+  font-size: 1.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.2rem;
+}
+
+
+
